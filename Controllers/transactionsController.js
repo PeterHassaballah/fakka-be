@@ -33,12 +33,15 @@ exports.getAll = function (req, res) {
   // Should also record a timestamp
   exports.sendchange = function (req, res) {
       console.log("Merchant sending an amount.");
+      // record in database
   }
 
-  exports.getMyTransactionHistory = function (req, res) {
+  exports.getmytransactions = function (req, res) {
     console.log("Someone getting their transaction history");
+    // retrieve from database
   }
 
-  exports.getLatestReceiveTransaction = function (req, res) {
-    console.log("Someone querying the latest transaction of receipts");
+  exports.getmylatestreceipt = function (req, res) {
+    console.log("Someone querying the latest transaction received");
+    // retrieve from database
   }

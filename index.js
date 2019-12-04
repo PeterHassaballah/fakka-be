@@ -52,7 +52,7 @@ var server = http.createServer(app);
 
 app.use('/', indexRouter);
 // app.use('/users', usersRouter);
-// app.use('/transactions', transactionsRouter);
+app.use('/transactions', transactionsRouter);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
