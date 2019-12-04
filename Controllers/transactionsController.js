@@ -28,3 +28,17 @@ exports.getAll = function (req, res) {
       // res.json(status);
   });
   }
+
+  // Should take sender (merchant) id, receiver (customer) id, and amount
+  // Should also record a timestamp
+  exports.sendchange = function (req, res) {
+      console.log("Merchant sending an amount.");
+  }
+
+  exports.getMyTransactionHistory = function (req, res) {
+    console.log("Someone getting their transaction history");
+  }
+
+  exports.getLatestReceiveTransaction = function (req, res) {
+    console.log("Someone querying the latest transaction of receipts");
+  }

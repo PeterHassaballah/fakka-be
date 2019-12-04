@@ -6,4 +6,8 @@ var transaction = require('../Models/transactionModel')
 
 // router.post("/getAll", transactionController.getAll);
 
+router.post("/sendchange", transactionController.sendchange);
+router.post("/mytransactions", transactionController.getMyTransactionHistory);
+router.post("/myReceivedtransaction", transactionController.getLatestReceiveTransaction);
+
 module.exports = router;
